@@ -3,124 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="sylenthai — Systems Architect, Formal Verification Researcher (Lean 4), Multi-Agent AI Engineer." />
-  <title>sylenthai — tty0 // Systems &amp; Formal Verification</title>
+  <meta name="description" content="sylenthai — Systems Software Engineer &amp; Formal Verification Researcher (Lean 4, Distributed Backends, Native Mobile)." />
+  <title>sylenthai — Systems Engineering &amp; Formal Verification</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="shell">
+  <div class="app-frame">
+    <!-- Top Bar -->
     <header class="topbar">
-      <div class="topbar-left">
-        <span class="dot dot-muted"></span>
-        <span class="dot dot-muted"></span>
-        <span class="dot dot-ok"></span>
-        <span class="crumb">sylenthai@kernel-node:~/portfolio</span>
+      <div class="brand">
+        <span class="status-dot" title="Build status: verified"></span>
+        <span class="brand-handle">sylenthai</span>
+        <span class="brand-sep">/</span>
+        <span class="brand-path" id="active-crumb">overview</span>
       </div>
-      <nav class="tabs" aria-label="Primary">
-        <button class="tab active" data-tab="overview">01_DOSSIER</button>
-        <button class="tab" data-tab="genesis">02_GENESIS</button>
-        <button class="tab" data-tab="systems">03_SYSTEMS</button>
-        <button class="tab" data-tab="crypto">04_IDENTITY</button>
+
+      <nav class="nav-tabs" aria-label="Sections">
+        <button class="nav-btn active" data-section="overview"><span class="k">1</span> Overview</button>
+        <button class="nav-btn" data-section="genesis"><span class="k">2</span> Formal Proofs</button>
+        <button class="nav-btn" data-section="systems"><span class="k">3</span> Systems</button>
+        <button class="nav-btn" data-section="matrix"><span class="k">4</span> Toolchain</button>
+        <button class="nav-btn" data-section="shell"><span class="k">5</span> Shell</button>
+        <button class="nav-btn" data-section="identity"><span class="k">6</span> Identity</button>
       </nav>
+
+      <button class="cmd-trigger" id="open-palette" type="button" title="Open Command Palette (Ctrl+K or /)">
+        <span>Command</span>
+        <kbd>Ctrl K</kbd>
+      </button>
     </header>
 
-    <main class="viewport">
-      <!-- TAB 1: OVERVIEW -->
-      <section class="panel active" id="panel-overview">
-        <div class="hero-grid">
-          <div>
-            <p class="eyebrow"><span class="pulse"></span> SYS.ONLINE // KERNEL_VERIFIED</p>
+    <!-- Main Viewport -->
+    <main class="content">
+
+      <!-- 01. OVERVIEW -->
+      <section class="section active" id="sec-overview">
+        <div class="hero">
+          <div class="hero-main">
+            <div class="tag-row">
+              <span class="pill pill-green">KERNEL VERIFIED · LEAN 4.12</span>
+              <span class="pill">SYSTEMS &amp; FORMAL METHODS</span>
+              <span class="pill" id="live-clock">UTC+05 --:--:--</span>
+            </div>
+
             <h1>SYLENTHAI</h1>
-            <p class="lead">
-              Systems &amp; AI Architect working at the intersection of
-              <strong>zero-Mathlib Lean 4 formal verification</strong>,
-              <strong>multi-agent orchestration</strong>, and
-              <strong>low-latency backend/mobile engineering</strong>.
+            <p class="subtitle">
+              Systems software engineer &amp; formal verification researcher focused on
+              <strong>zero-Mathlib Lean 4 proofs</strong>, <strong>distributed async backends</strong>,
+              and <strong>hardened native mobile runtimes</strong>.
             </p>
-            <div class="cmd-line">
-              <span class="prompt">root@sylenthai:~#</span>
-              <span id="typed-cmd"></span><span class="cursor"></span>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-jump="genesis">Inspect Formal Proofs</button>
+              <button class="btn btn-ghost" data-jump="shell">Launch Unix Shell</button>
+              <a class="btn btn-ghost" href="https://github.com/sylenthai" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
             </div>
           </div>
 
-          <aside class="spec-box">
-            <div class="spec-head">HOST_TELEMETRY</div>
-            <dl>
+          <aside class="dossier-card">
+            <div class="dossier-header">
+              <span>SYSTEM_SPEC</span>
+              <span class="mono-dim">tty0</span>
+            </div>
+            <dl class="spec-list">
               <div><dt>HANDLE</dt><dd>sylenthai</dd></div>
-              <div><dt>PROOFS</dt><dd>Lean 4 v4.12 (104 decls)</dd></div>
-              <div><dt>AGENTS</dt><dd>FastAPI · pgvector · Redis</dd></div>
-              <div><dt>CLIENT</dt><dd>React Native · Android SDK 36</dd></div>
-              <div><dt>DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.24422524" target="_blank" rel="noreferrer">10.5281/zenodo.24422524</a></dd></div>
-              <div><dt>MAIL</dt><dd><a href="mailto:sylenthai@gmail.com">sylenthai@gmail.com</a></dd></div>
+              <div><dt>DISCIPLINE</dt><dd>Formal Proofs &amp; Systems</dd></div>
+              <div><dt>VERIFIER</dt><dd>Lean 4 v4.12.0 (Lake)</dd></div>
+              <div><dt>BACKEND</dt><dd>Python 3.12 · FastAPI · Redis</dd></div>
+              <div><dt>STORAGE</dt><dd>PostgreSQL 16 · pgvector</dd></div>
+              <div><dt>MOBILE</dt><dd>Java 17 · Android SDK 36 · RN</dd></div>
+              <div><dt>ZENODO</dt><dd><a href="https://doi.org/10.5281/zenodo.24422524" target="_blank" rel="noreferrer">10.5281/zenodo.24422524</a></dd></div>
+              <div><dt>CONTACT</dt><dd><button class="inline-copy" data-copy="sylenthai@gmail.com">sylenthai@gmail.com</button></dd></div>
             </dl>
           </aside>
         </div>
 
-        <div class="cards">
+        <!-- Key Engineering Telemetry Strip -->
+        <div class="metrics-strip">
+          <div class="metric">
+            <div class="metric-val ok">104</div>
+            <div class="metric-lbl">Kernel-Verified Decls</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">0</div>
+            <div class="metric-lbl">Sorry / Admit / Extra Axioms</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">30 / 30</div>
+            <div class="metric-lbl">Adversarial Audit Checks</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">2<sup>71</sup></div>
+            <div class="metric-lbl">Aligned Computational Horizon</div>
+          </div>
+        </div>
+
+        <!-- Featured Projects Grid -->
+        <div class="section-title-bar">
+          <h2>SELECTED ENGINEERING WORK</h2>
+          <span class="mono-dim">03 ACTIVE SYSTEMS</span>
+        </div>
+
+        <div class="grid-3">
           <article class="card">
-            <div class="card-tag">[0x01] FORMAL_KERNEL</div>
-            <h2>Project Genesis</h2>
-            <p>Self-contained Lean 4 formalizations of 3n + 1 cycle obstructions, dual-adic collapse, and Mod-2³⁰ cylinder contraction with <code>0 sorry</code>.</p>
-            <div class="card-links">
-              <a href="https://github.com/sylenthai/project-genesis" target="_blank" rel="noreferrer">Repository ↗</a>
+            <div class="card-top">
+              <span class="mono-code">[0x01] FORMAL_VERIFICATION</span>
+              <span class="status-pill ok">PASS</span>
+            </div>
+            <h3>Project Genesis</h3>
+            <p>
+              Self-contained, zero-Mathlib Lean 4 formalizations of 3n + 1 cycle obstructions,
+              dual-adic collapse, Stammering Bit-Exhaustion, and Mod-2³⁰ cylinder measure decay.
+            </p>
+            <div class="card-footer">
+              <a href="https://github.com/sylenthai/project-genesis" target="_blank" rel="noreferrer">Source ↗</a>
               <a href="https://sylenthai.github.io/project-genesis/" target="_blank" rel="noreferrer">Blueprint ↗</a>
+              <a href="https://doi.org/10.5281/zenodo.24422524" target="_blank" rel="noreferrer">DOI ↗</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-tag">[0x02] AGENT_MESH</div>
-            <h2>SYLENTH Codes</h2>
-            <p>Mobile-first multi-agent software engineering platform orchestrating Backend, DB, QA, Security, and DevOps agents via AsyncIO &amp; Celery.</p>
-            <div class="card-meta">Python 3.12 · FastAPI · pgvector · React Native</div>
+            <div class="card-top">
+              <span class="mono-code">[0x02] DISTRIBUTED_IDE</span>
+              <span class="status-pill">ASYNC</span>
+            </div>
+            <h3>SYLENTH Codes</h3>
+            <p>
+              Mobile-first software engineering platform with real-time WebSocket diff streaming,
+              CodeMirror 6 editor, Celery task workers, Redis pub/sub, and PostgreSQL persistence.
+            </p>
+            <div class="card-footer">
+              <span class="mono-dim">FastAPI · Celery · React Native</span>
+            </div>
           </article>
 
           <article class="card">
-            <div class="card-tag">[0x03] HARDENED_NATIVE</div>
-            <h2>Ember &amp; Ash Android</h2>
-            <p>Offline Three.js 3D chess client wrapped in a virtual-origin isolated Android WebView (<code>emberandash.local</code>) with hardware acceleration.</p>
-            <div class="card-meta">Java 17 · Android SDK 36 · Three.js</div>
+            <div class="card-top">
+              <span class="mono-code">[0x03] NATIVE_ENGINE</span>
+              <span class="status-pill">HARDENED</span>
+            </div>
+            <h3>Ember &amp; Ash Android</h3>
+            <p>
+              Offline 3D WebGL chess engine packaged in a hardened Android WebView (`SDK 36`, Java 17)
+              with virtual-origin asset isolation (`emberandash.local`) and hardware layers.
+            </p>
+            <div class="card-footer">
+              <span class="mono-dim">Java 17 · Android · Three.js</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <!-- TAB 2: GENESIS -->
-      <section class="panel" id="panel-genesis">
+      <!-- 02. FORMAL PROOFS -->
+      <section class="section" id="sec-genesis">
         <div class="section-head">
-          <h2>// PROJECT_GENESIS — KERNEL VERIFICATION</h2>
-          <span class="badge-ok">LAKE BUILD: PASS (0 SORRY / 0 AXIOMS)</span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Module</th><th>Decls</th><th>Proved Focus</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>CollatzCoreReductions.lean</code></td>
-                <td class="ok">39</td>
-                <td>Exact trajectory law 2<sup>k</sup>F<sup>k</sup>(n) = 3<sup>w<sub>k</sub></sup>n + C<sub>k</sub>, high-seed descent, Mod-2<sup>30</sup> cylinder decay</td>
-              </tr>
-              <tr>
-                <td><code>CollatzTargetA_Asymptotic.lean</code></td>
-                <td class="ok">40</td>
-                <td>Dual-adic collapse (u = v = n₀), supercritical prefix lower bounds, forward-inverse duality</td>
-              </tr>
-              <tr>
-                <td><code>CollatzTargetB_Stammering.lean</code></td>
-                <td class="ok">25</td>
-                <td>Stammering bit-exhaustion, Carry Sandwich C1 contraction, 2-adic Ridout ceiling (τ<sub>W</sub> ≤ 1)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="bibtex-box">
-          <div class="bibtex-top">
-            <span>CITATION // BIBTEX</span>
-            <button id="copy-bib" type="button">COPY</button>
+          <div>
+            <span class="mono-code">FORMAL_METHODS // LEAN 4.12.0</span>
+            <h2>Project Genesis — Kernel Verification Explorer</h2>
           </div>
-          <pre id="bib-text">@software{sylenthai_2026_project_genesis,
+          <span class="pill pill-green">lake build: PASS · 0 sorry</span>
+        </div>
+
+        <p class="section-desc">
+          Select a Lean 4 module below to inspect its kernel-verified theorems, arithmetic invariants,
+          and reduction boundaries.
+        </p>
+
+        <div class="module-switcher">
+          <button class="mod-btn active" data-mod="core">
+            <strong>CollatzCoreReductions.lean</strong>
+            <span>39 declarations</span>
+          </button>
+          <button class="mod-btn" data-mod="targetA">
+            <strong>CollatzTargetA_Asymptotic.lean</strong>
+            <span>40 declarations</span>
+          </button>
+          <button class="mod-btn" data-mod="targetB">
+            <strong>CollatzTargetB_Stammering.lean</strong>
+            <span>25 declarations</span>
+          </button>
+        </div>
+
+        <div class="module-detail" id="module-detail"></div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <span class="mono-code">GLOBAL REDUCTION</span>
+            <code>Target A ∧ Target B → GlobalCollatzConjecture</code>
+            <p>Constructive strong-induction closure verified cleanly without extra axioms or invalid <code>Iff.rfl</code> steps.</p>
+          </div>
+          <div class="cert-card">
+            <span class="mono-code">COMPUTATIONAL CERTIFICATES</span>
+            <code>1 ≤ n &lt; 2⁷¹  |  r = 217,740,015</code>
+            <p>Aligned with Bařina (2025) convergence horizon and extremal Mod-2²⁸ verification (F³⁹⁵(r) &lt; r, F⁴⁹⁷(r) = 1).</p>
+          </div>
+        </div>
+
+        <div class="code-panel">
+          <div class="code-panel-bar">
+            <span>CITATION // BIBTEX (ZENODO DOI: 10.5281/zenodo.24422524)</span>
+            <button class="copy-btn" data-copy-target="bib-content" type="button">Copy BibTeX</button>
+          </div>
+          <pre id="bib-content">@software{sylenthai_2026_project_genesis,
   author    = {sylenthai},
-  title     = {Project Genesis: Zero-Mathlib Kernel-Verified Lean 4 Obstructions for 3n + 1},
+  title     = {Project Genesis: Zero-Mathlib Kernel-Verified Lean 4 Obstructions and Structural Reductions for the 3n + 1 Problem},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.24422524},
@@ -129,91 +215,200 @@
         </div>
       </section>
 
-      <!-- TAB 3: SYSTEMS -->
-      <section class="panel" id="panel-systems">
+      <!-- 03. SYSTEMS -->
+      <section class="section" id="sec-systems">
         <div class="section-head">
-          <h2>// TECHNICAL_MATRIX</h2>
+          <div>
+            <span class="mono-code">SYSTEMS_ARCHITECTURE</span>
+            <h2>Production &amp; Experimental Systems</h2>
+          </div>
+          <span class="mono-dim">END-TO-END TOPOLOGY</span>
         </div>
-        <div class="table-wrap">
-          <table>
-            <tbody>
-              <tr><th>Verification &amp; Audit</th><td>Lean 4 (v4.12.0) · Lake · 30-point adversarial Python auditor</td></tr>
-              <tr><th>Languages</th><td>Python 3.12 · TypeScript · Java 17 · Kotlin · JavaScript · Bash</td></tr>
-              <tr><th>Backend &amp; Data</th><td>FastAPI · AsyncIO · PostgreSQL 16 (pgvector) · SQLAlchemy 2.0 · Alembic · Redis 7 · Celery</td></tr>
-              <tr><th>Frontend &amp; Mobile</th><td>React Native · Expo · CodeMirror 6 · Three.js · Android SDK 36</td></tr>
-              <tr><th>Infrastructure</th><td>Docker Compose · Nginx · GitHub Actions · SSH Commit Signing</td></tr>
-            </tbody>
-          </table>
+
+        <div class="sys-stack">
+          <article class="sys-block">
+            <div class="sys-head">
+              <h3>SYLENTH Codes — Distributed Mobile Engineering Stack</h3>
+              <span class="pill">Docker Compose · Multi-Service</span>
+            </div>
+            <div class="pipeline">
+              <div class="pipe-node">
+                <strong>Mobile Client</strong>
+                <span>React Native · TypeScript · Zustand · TanStack Query · CodeMirror 6</span>
+              </div>
+              <div class="pipe-arrow">⇄</div>
+              <div class="pipe-node">
+                <strong>API Gateway</strong>
+                <span>Python 3.12 · FastAPI · AsyncIO · WebSocket Diffs · JWT / RBAC</span>
+              </div>
+              <div class="pipe-arrow">⇄</div>
+              <div class="pipe-node">
+                <strong>Async &amp; State</strong>
+                <span>Redis 7 PubSub · Celery Workers · PostgreSQL 16 + pgvector · Alembic</span>
+              </div>
+            </div>
+            <p class="sys-note">
+              Designed for low-latency mobile code inspection and remote build orchestration with multi-tenant RBAC isolation,
+              real-time WebSocket telemetry logs, and containerized service healthchecks.
+            </p>
+          </article>
+
+          <article class="sys-block">
+            <div class="sys-head">
+              <h3>Ember &amp; Ash — Hardened Android 3D Runtime</h3>
+              <span class="pill">Java 17 · SDK 36</span>
+            </div>
+            <div class="pipeline">
+              <div class="pipe-node">
+                <strong>MainActivity.java</strong>
+                <span>Hardware Layer · Fullscreen Insets · Keep-Screen-On</span>
+              </div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node">
+                <strong>Virtual Origin Gate</strong>
+                <span>shouldInterceptRequest → https://emberandash.local/*</span>
+              </div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node">
+                <strong>3D Chess Engine</strong>
+                <span>Bundled Three.js · Zero File/Content URI Exposure</span>
+              </div>
+            </div>
+            <p class="sys-note">
+              Enforces strict WebView sandboxing (<code>setAllowFileAccess(false)</code>, <code>setAllowContentAccess(false)</code>)
+              while serving local WebGL assets smoothly over an intercepted virtual host.
+            </p>
+          </article>
+
+          <article class="sys-block">
+            <div class="sys-head">
+              <h3>daily-practise — Automated Algorithmic Engineering Log</h3>
+              <span class="pill">GitHub Actions · Python 3.12</span>
+            </div>
+            <p class="sys-note">
+              Structured repository tracking daily problem-solving and complexity notes under <code>journal/YYYY-MM/</code>,
+              paired with a deterministic GitHub Actions scheduler (<code>17:15 UTC</code>) and automated live telemetry SVG generation.
+            </p>
+          </article>
         </div>
       </section>
 
-      <!-- TAB 4: CRYPTO -->
-      <section class="panel" id="panel-crypto">
+      <!-- 04. TOOLCHAIN MATRIX -->
+      <section class="section" id="sec-matrix">
         <div class="section-head">
-          <h2>// CRYPTOGRAPHIC_IDENTITY &amp; ENDPOINTS</h2>
+          <div>
+            <span class="mono-code">TECHNICAL_MATRIX</span>
+            <h2>Languages, Runtimes &amp; Tooling</h2>
+          </div>
         </div>
-        <pre class="key-block">HANDLE              : sylenthai
-EMAIL               : sylenthai@gmail.com
-GITHUB              : https://github.com/sylenthai
-BLUEPRINT           : https://sylenthai.github.io/project-genesis/
-ZENODO DOI          : https://doi.org/10.5281/zenodo.24422524
-SSH SIGNING (ED25519): SHA256:AwTwyq0i0pr3pBljb67zuWa+jA24IFD790xNN2ry97k</pre>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="formal">Formal &amp; Math</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; Data</button>
+          <button class="filter-btn" data-filter="mobile">Mobile &amp; Client</button>
+          <button class="filter-btn" data-filter="infra">Infra &amp; Security</button>
+        </div>
+
+        <div class="tech-grid" id="tech-grid">
+          <div class="tech-item" data-cat="formal"><strong>Lean 4 (v4.12.0)</strong><span>Kernel theorem proving, zero-Mathlib reductions</span></div>
+          <div class="tech-item" data-cat="formal"><strong>Lake &amp; Lean Audit</strong><span>Reproducible builds &amp; 30-pt adversarial verification</span></div>
+          <div class="tech-item" data-cat="backend"><strong>Python 3.12</strong><span>FastAPI, AsyncIO, CLI tooling, scientific scripts</span></div>
+          <div class="tech-item" data-cat="backend"><strong>PostgreSQL 16 + pgvector</strong><span>SQLAlchemy 2.0 Async, Alembic migrations, vector indexing</span></div>
+          <div class="tech-item" data-cat="backend"><strong>Redis 7 &amp; Celery</strong><span>Pub/Sub messaging, distributed background workers</span></div>
+          <div class="tech-item" data-cat="mobile"><strong>TypeScript / React Native</strong><span>Zustand, TanStack Query, CodeMirror 6 mobile editor</span></div>
+          <div class="tech-item" data-cat="mobile"><strong>Java 17 &amp; Android SDK 36</strong><span>Hardened WebView containers, Gradle Kotlin DSL</span></div>
+          <div class="tech-item" data-cat="mobile"><strong>HTML5 / CSS3 / Three.js</strong><span>Zero-dependency WebGL &amp; reactive UI interfaces</span></div>
+          <div class="tech-item" data-cat="infra"><strong>Docker &amp; Nginx</strong><span>Multi-container stacks, healthchecks, reverse proxy</span></div>
+          <div class="tech-item" data-cat="infra"><strong>GitHub Actions &amp; Pages</strong><span>Automated CI verification, telemetry, static deploys</span></div>
+          <div class="tech-item" data-cat="infra"><strong>SSH Commit Signing</strong><span>ED25519 cryptographic commit verification</span></div>
+          <div class="tech-item" data-cat="infra"><strong>Linux &amp; Bash</strong><span>System automation, process tooling, reproducible scripts</span></div>
+        </div>
       </section>
+
+      <!-- 05. INTERACTIVE SHELL -->
+      <section class="section" id="sec-shell">
+        <div class="section-head">
+          <div>
+            <span class="mono-code">INTERACTIVE_TTY // /bin/sh</span>
+            <h2>Workstation Console</h2>
+          </div>
+          <button class="copy-btn" id="clear-shell" type="button">clear</button>
+        </div>
+
+        <div class="quick-cmds">
+          <button class="chip" data-cmd="help">help</button>
+          <button class="chip" data-cmd="whoami">whoami</button>
+          <button class="chip" data-cmd="ls">ls</button>
+          <button class="chip" data-cmd="cat genesis">cat genesis</button>
+          <button class="chip" data-cmd="cat stack">cat stack</button>
+          <button class="chip" data-cmd="verify">verify</button>
+          <button class="chip" data-cmd="ssh">ssh</button>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-output" id="term-out">
+            <div class="t-dim">sylenthai workstation shell — type <code>help</code> or click a command above.</div>
+          </div>
+          <form class="terminal-input-row" id="term-form">
+            <span class="t-prompt">sylenthai@kernel:~$</span>
+            <input id="term-input" type="text" autocomplete="off" spellcheck="false" placeholder="enter command (help, ls, cat genesis, verify...)" />
+          </form>
+        </div>
+      </section>
+
+      <!-- 06. CRYPTOGRAPHIC IDENTITY -->
+      <section class="section" id="sec-identity">
+        <div class="section-head">
+          <div>
+            <span class="mono-code">IDENTITY &amp; VERIFICATION</span>
+            <h2>Cryptographic Fingerprints &amp; Endpoints</h2>
+          </div>
+        </div>
+
+        <div class="code-panel">
+          <div class="code-panel-bar">
+            <span>PUBLIC IDENTITY RECORD</span>
+            <button class="copy-btn" data-copy-target="id-record" type="button">Copy Record</button>
+          </div>
+          <pre id="id-record">HANDLE               : sylenthai
+EMAIL                : sylenthai@gmail.com
+GITHUB               : https://github.com/sylenthai
+PORTFOLIO            : https://sylenthai.github.io/sylenthai/
+PROJECT GENESIS      : https://github.com/sylenthai/project-genesis
+THEOREM BLUEPRINT    : https://sylenthai.github.io/project-genesis/
+ZENODO DOI           : https://doi.org/10.5281/zenodo.24422524
+SSH SIGNING (ED25519): SHA256:AwTwyq0i0pr3pBljb67zuWa+jA24IFD790xNN2ry97k</pre>
+        </div>
+
+        <div class="code-panel" style="margin-top: 16px;">
+          <div class="code-panel-bar">
+            <span>SSH PUBLIC SIGNING KEY (ED25519)</span>
+            <button class="copy-btn" data-copy-target="ssh-pub" type="button">Copy Public Key</button>
+          </div>
+          <pre id="ssh-pub">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILvSg4vgJ94Xlbd5dNIVIu3U9H5/AxW0IyQv0MBUI/Tu sylenthai@gmail.com</pre>
+        </div>
+      </section>
+
     </main>
 
+    <!-- Footer Statusbar -->
     <footer class="statusbar">
       <span>NORMAL · sylenthai.github.io/sylenthai</span>
-      <span>utf-8 · unix · lean4/py3.12</span>
+      <span>Shortcuts: [1–6] switch views · [Ctrl+K] command palette</span>
     </footer>
   </div>
 
-  <script>
-    const tabs = document.querySelectorAll(".tab");
-    const panels = document.querySelectorAll(".panel");
-    tabs.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        tabs.forEach((t) => t.classList.remove("active"));
-        panels.forEach((p) => p.classList.remove("active"));
-        btn.classList.add("active");
-        document.getElementById("panel-" + btn.dataset.tab).classList.add("active");
-      });
-    });
+  <!-- Command Palette Modal -->
+  <div class="palette-backdrop" id="palette-backdrop" aria-hidden="true">
+    <div class="palette" role="dialog" aria-label="Command Palette">
+      <input id="palette-input" type="text" placeholder="Type a command or jump to section..." autocomplete="off" />
+      <ul id="palette-list"></ul>
+    </div>
+  </div>
 
-    const commands = [
-      "lake build ProjectGenesis && python audit_30_points_adversarial.py",
-      "docker compose up -d && uvicorn app.main:app --workers 4",
-      "git log --show-signature -n 1"
-    ];
-    const target = document.getElementById("typed-cmd");
-    let cmdIdx = 0, charIdx = 0, deleting = false;
-    function tick() {
-      const full = commands[cmdIdx];
-      target.textContent = full.slice(0, charIdx);
-      if (!deleting && charIdx < full.length) {
-        charIdx++;
-        setTimeout(tick, 38);
-      } else if (!deleting && charIdx === full.length) {
-        deleting = true;
-        setTimeout(tick, 2100);
-      } else if (deleting && charIdx > 0) {
-        charIdx--;
-        setTimeout(tick, 18);
-      } else {
-        deleting = false;
-        cmdIdx = (cmdIdx + 1) % commands.length;
-        setTimeout(tick, 350);
-      }
-    }
-    tick();
+  <div class="toast" id="toast">Copied to clipboard</div>
 
-    const copyBtn = document.getElementById("copy-bib");
-    if (copyBtn) {
-      copyBtn.addEventListener("click", () => {
-        navigator.clipboard.writeText(document.getElementById("bib-text").textContent);
-        copyBtn.textContent = "COPIED";
-        setTimeout(() => { copyBtn.textContent = "COPY"; }, 1600);
-      });
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
