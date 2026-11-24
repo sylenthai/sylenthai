@@ -1,62 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="210" viewBox="0 0 240 210" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="215" viewBox="0 0 280 215" fill="none">
   <style>
     @keyframes screenPulse {
       0%, 100% { filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.55)); }
-      50% { filter: drop-shadow(0 0 16px rgba(0, 255, 65, 0.7)); }
+      50% { filter: drop-shadow(0 0 18px rgba(0, 255, 136, 0.75)); }
     }
-    @keyframes floatCode1 {
-      0%, 100% { transform: translateY(0px); opacity: 0.9; }
-      50% { transform: translateY(-5px); opacity: 0.4; }
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
     }
-    @keyframes floatCode2 {
-      0%, 100% { transform: translateY(-3px); opacity: 0.45; }
-      50% { transform: translateY(4px); opacity: 0.95; }
+    @keyframes floatB {
+      0%, 100% { transform: translateY(-4px); }
+      50% { transform: translateY(4px); }
     }
-    @keyframes eyeGlow {
-      0%, 100% { fill: #00d4ff; }
-      50% { fill: #00ff41; }
+    @keyframes haloSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     .laptop { animation: screenPulse 3s ease-in-out infinite; }
-    .code-l { animation: floatCode1 2.8s ease-in-out infinite; }
-    .code-r { animation: floatCode2 3.2s ease-in-out infinite; }
-    .visor { animation: eyeGlow 3s ease-in-out infinite; }
+    .holo-l { animation: floatA 3.2s ease-in-out infinite; }
+    .holo-r { animation: floatB 3.6s ease-in-out infinite; }
+    .halo { transform-origin: 140px 88px; animation: haloSpin 18s linear infinite; }
   </style>
 
-  <!-- Subtle floor glow -->
-  <ellipse cx="120" cy="192" rx="88" ry="8" fill="#00d4ff" fill-opacity="0.18" />
+  <!-- Floor glow -->
+  <ellipse cx="140" cy="195" rx="102" ry="9" fill="#00d4ff" fill-opacity="0.18" />
 
-  <!-- Floating code particles -->
-  <g class="code-l">
-    <rect x="20" y="42" width="28" height="4" rx="2" fill="#00ff41" fill-opacity="0.7" />
-    <rect x="14" y="52" width="38" height="4" rx="2" fill="#00d4ff" fill-opacity="0.6" />
-    <rect x="24" y="62" width="22" height="4" rx="2" fill="#00ff41" fill-opacity="0.5" />
+  <!-- Neural halo behind head -->
+  <circle class="halo" cx="140" cy="88" r="64" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1.3" stroke-dasharray="6 8" />
+
+  <!-- Left Holographic Code Window -->
+  <g class="holo-l">
+    <rect x="10" y="34" width="66" height="46" rx="7" fill="#07101f" fill-opacity="0.9" stroke="#00ff88" stroke-width="1.3" />
+    <rect x="18" y="44" width="32" height="3.5" rx="1.5" fill="#00ff88" />
+    <rect x="18" y="52" width="48" height="3.5" rx="1.5" fill="#00d4ff" fill-opacity="0.8" />
+    <rect x="18" y="60" width="26" height="3.5" rx="1.5" fill="#8b5cf6" />
+    <rect x="18" y="68" width="40" height="3.5" rx="1.5" fill="#00ff88" fill-opacity="0.65" />
   </g>
-  <g class="code-r">
-    <rect x="188" y="38" width="32" height="4" rx="2" fill="#00d4ff" fill-opacity="0.7" />
-    <rect x="194" y="48" width="24" height="4" rx="2" fill="#00ff41" fill-opacity="0.6" />
-    <rect x="184" y="58" width="36" height="4" rx="2" fill="#7c3aed" fill-opacity="0.7" />
+
+  <!-- Right Holographic Proof Window -->
+  <g class="holo-r">
+    <rect x="204" y="32" width="66" height="46" rx="7" fill="#07101f" fill-opacity="0.9" stroke="#00d4ff" stroke-width="1.3" />
+    <rect x="212" y="42" width="42" height="3.5" rx="1.5" fill="#00d4ff" />
+    <rect x="212" y="50" width="28" height="3.5" rx="1.5" fill="#00ff88" />
+    <rect x="212" y="58" width="48" height="3.5" rx="1.5" fill="#c4b5fd" />
+    <circle cx="256" cy="68" r="4" fill="#00ff88" />
   </g>
 
   <!-- Hoodie & shoulders -->
-  <path d="M54 185 C54 134, 78 112, 120 112 C162 112, 186 134, 186 185 Z" fill="#0f172a" stroke="#00d4ff" stroke-width="3" />
-  <!-- Hood -->
-  <path d="M74 118 C72 64, 92 30, 120 30 C148 30, 168 64, 166 118 Z" fill="#1e293b" stroke="#00d4ff" stroke-width="3" />
-  <!-- Inner hood shadow / face -->
-  <path d="M88 106 C88 70, 102 52, 120 52 C138 52, 152 70, 152 106 C142 116, 98 116, 88 106 Z" fill="#020617" />
+  <path d="M74 188 C74 136, 98 114, 140 114 C182 114, 206 136, 206 188 Z" fill="#0f172a" stroke="#00d4ff" stroke-width="2.6" />
+  <path d="M94 118 C92 64, 112 32, 140 32 C168 32, 188 64, 186 118 Z" fill="#1e293b" stroke="#00d4ff" stroke-width="2.6" />
+  <path d="M108 106 C108 72, 122 54, 140 54 C158 54, 172 72, 172 106 C162 116, 118 116, 108 106 Z" fill="#020617" />
 
-  <!-- Glasses / visor -->
-  <rect class="visor" x="97" y="79" width="19" height="12" rx="3" fill-opacity="0.2" stroke="#00d4ff" stroke-width="2.2" />
-  <rect class="visor" x="124" y="79" width="19" height="12" rx="3" fill-opacity="0.2" stroke="#00d4ff" stroke-width="2.2" />
-  <line x1="116" y1="84" x2="124" y2="84" stroke="#00d4ff" stroke-width="2.2" />
+  <!-- Glowing cyber visor -->
+  <rect x="116" y="79" width="20" height="12" rx="3" fill="#00ff88" fill-opacity="0.18" stroke="#00ff88" stroke-width="2" />
+  <rect x="144" y="79" width="20" height="12" rx="3" fill="#00d4ff" fill-opacity="0.18" stroke="#00d4ff" stroke-width="2" />
+  <line x1="136" y1="84" x2="144" y2="84" stroke="#00d4ff" stroke-width="2" />
 
   <!-- Laptop -->
   <g class="laptop">
-    <rect x="66" y="124" width="108" height="64" rx="8" fill="#e2e8f0" stroke="#00d4ff" stroke-width="2.5" />
-    <rect x="72" y="130" width="96" height="52" rx="4" fill="#0b1120" />
-    <!-- Glowing logo on back of laptop -->
-    <circle cx="120" cy="156" r="10" fill="none" stroke="#00ff41" stroke-width="2.4" />
-    <circle cx="120" cy="156" r="3.5" fill="#00d4ff" />
-    <!-- Base -->
-    <rect x="52" y="186" width="136" height="7" rx="3.5" fill="#94a3b8" stroke="#00d4ff" stroke-width="1.5" />
+    <rect x="86" y="126" width="108" height="62" rx="8" fill="#0b1120" stroke="#00d4ff" stroke-width="2.3" />
+    <polygon points="140,141 153,149 153,164 140,172 127,164 127,149" fill="#00ff88" fill-opacity="0.16" stroke="#00ff88" stroke-width="2" />
+    <circle cx="140" cy="156.5" r="3" fill="#00d4ff" />
+    <rect x="72" y="187" width="136" height="7" rx="3.5" fill="#334155" stroke="#00d4ff" stroke-width="1.3" />
   </g>
 </svg>
