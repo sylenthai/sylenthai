@@ -2,7 +2,7 @@
   <rect x="1" y="1" width="878" height="203" rx="10" fill="#0b0f14" stroke="#21262d" stroke-width="1.2" />
 
   <text x="24" y="27" font-family="'Cascadia Code', Consolas, monospace" font-size="11" font-weight="600" letter-spacing="1.4" fill="#6e7681">LIVE TELEMETRY // AUTO-SYNCED VIA GITHUB ACTIONS</text>
-  <text x="856" y="27" text-anchor="end" font-family="'Cascadia Code', Consolas, monospace" font-size="10.5" fill="#6e7681">SYNC: 2026-11-24 17:22 UTC</text>
+  <text x="856" y="27" text-anchor="end" font-family="'Cascadia Code', Consolas, monospace" font-size="10.5" fill="#6e7681">SYNC: 2026-11-24 17:25 UTC</text>
   <line x1="20" y1="38" x2="860" y2="38" stroke="#161b22" stroke-width="1" />
 
   <!-- Divider -->
@@ -13,9 +13,9 @@
   <clipPath id="barClip"><rect x="24" y="82" width="390" height="10" rx="5" /></clipPath>
   <rect x="24" y="82" width="390" height="10" rx="5" fill="#161b22" />
   <g clip-path="url(#barClip)">
-    <rect x="24" y="82" width="155.5" height="10" fill="#3fb950" /><rect x="179.5" y="82" width="145.7" height="10" fill="#58a6ff" /><rect x="325.2" y="82" width="82.5" height="10" fill="#79c0ff" /><rect x="407.7" y="82" width="3.1" height="10" fill="#8b949e" /><rect x="410.8" y="82" width="3.2" height="10" fill="#8b949e" />
+    <rect x="24" y="82" width="155.3" height="10" fill="#3fb950" /><rect x="179.3" y="82" width="145.5" height="10" fill="#58a6ff" /><rect x="324.8" y="82" width="83.0" height="10" fill="#79c0ff" /><rect x="407.8" y="82" width="3.1" height="10" fill="#8b949e" /><rect x="410.90000000000003" y="82" width="3.1" height="10" fill="#8b949e" />
   </g>
-  <circle cx="29" cy="110" r="4" fill="#3fb950" /><text x="40" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Lean <tspan fill="#8b949e">39.6%</tspan></text><circle cx="234" cy="110" r="4" fill="#58a6ff" /><text x="245" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TypeScript <tspan fill="#8b949e">37.1%</tspan></text><circle cx="29" cy="134" r="4" fill="#79c0ff" /><text x="40" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Python <tspan fill="#8b949e">21.0%</tspan></text><circle cx="234" cy="134" r="4" fill="#8b949e" /><text x="245" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">PLpgSQL <tspan fill="#8b949e">0.8%</tspan></text><circle cx="29" cy="158" r="4" fill="#8b949e" /><text x="40" y="162" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TeX <tspan fill="#8b949e">0.8%</tspan></text>
+  <circle cx="29" cy="110" r="4" fill="#3fb950" /><text x="40" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Lean <tspan fill="#8b949e">39.5%</tspan></text><circle cx="234" cy="110" r="4" fill="#58a6ff" /><text x="245" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TypeScript <tspan fill="#8b949e">37.0%</tspan></text><circle cx="29" cy="134" r="4" fill="#79c0ff" /><text x="40" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Python <tspan fill="#8b949e">21.1%</tspan></text><circle cx="234" cy="134" r="4" fill="#8b949e" /><text x="245" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">PLpgSQL <tspan fill="#8b949e">0.8%</tspan></text><circle cx="29" cy="158" r="4" fill="#8b949e" /><text x="40" y="162" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TeX <tspan fill="#8b949e">0.8%</tspan></text>
 
   <line x1="24" y1="168" x2="414" y2="168" stroke="#161b22" stroke-width="1" />
   <text x="24" y="188" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e">
