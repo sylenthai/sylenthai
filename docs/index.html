@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sylenthai вЂ” Systems Architect, Formal Verification Researcher (Lean 4), Multi-Agent AI Engineer." />
+  <title>sylenthai вЂ” tty0 // Systems &amp; Formal Verification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="dot dot-muted"></span>
+        <span class="dot dot-muted"></span>
+        <span class="dot dot-ok"></span>
+        <span class="crumb">sylenthai@kernel-node:~/portfolio</span>
+      </div>
+      <nav class="tabs" aria-label="Primary">
+        <button class="tab active" data-tab="overview">01_DOSSIER</button>
+        <button class="tab" data-tab="genesis">02_GENESIS</button>
+        <button class="tab" data-tab="systems">03_SYSTEMS</button>
+        <button class="tab" data-tab="crypto">04_IDENTITY</button>
+      </nav>
+    </header>
+
+    <main class="viewport">
+      <!-- TAB 1: OVERVIEW -->
+      <section class="panel active" id="panel-overview">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow"><span class="pulse"></span> SYS.ONLINE // KERNEL_VERIFIED</p>
+            <h1>SYLENTHAI</h1>
+            <p class="lead">
+              Systems &amp; AI Architect working at the intersection of
+              <strong>zero-Mathlib Lean 4 formal verification</strong>,
+              <strong>multi-agent orchestration</strong>, and
+              <strong>low-latency backend/mobile engineering</strong>.
+            </p>
+            <div class="cmd-line">
+              <span class="prompt">root@sylenthai:~#</span>
+              <span id="typed-cmd"></span><span class="cursor"></span>
+            </div>
+          </div>
+
+          <aside class="spec-box">
+            <div class="spec-head">HOST_TELEMETRY</div>
+            <dl>
+              <div><dt>HANDLE</dt><dd>sylenthai</dd></div>
+              <div><dt>PROOFS</dt><dd>Lean 4 v4.12 (104 decls)</dd></div>
+              <div><dt>AGENTS</dt><dd>FastAPI В· pgvector В· Redis</dd></div>
+              <div><dt>CLIENT</dt><dd>React Native В· Android SDK 36</dd></div>
+              <div><dt>DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.24422524" target="_blank" rel="noreferrer">10.5281/zenodo.24422524</a></dd></div>
+              <div><dt>MAIL</dt><dd><a href="mailto:sylenthai@gmail.com">sylenthai@gmail.com</a></dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-tag">[0x01] FORMAL_KERNEL</div>
+            <h2>Project Genesis</h2>
+            <p>Self-contained Lean 4 formalizations of 3n + 1 cycle obstructions, dual-adic collapse, and Mod-2ВівЃ° cylinder contraction with <code>0 sorry</code>.</p>
+            <div class="card-links">
+              <a href="https://github.com/sylenthai/project-genesis" target="_blank" rel="noreferrer">Repository в†—</a>
+              <a href="https://sylenthai.github.io/sylenthai/project-genesis/" target="_blank" rel="noreferrer">Blueprint в†—</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">[0x02] AGENT_MESH</div>
+            <h2>SYLENTH Codes</h2>
+            <p>Mobile-first multi-agent software engineering platform orchestrating Backend, DB, QA, Security, and DevOps agents via AsyncIO &amp; Celery.</p>
+            <div class="card-meta">Python 3.12 В· FastAPI В· pgvector В· React Native</div>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">[0x03] HARDENED_NATIVE</div>
+            <h2>Ember &amp; Ash Android</h2>
+            <p>Offline Three.js 3D chess client wrapped in a virtual-origin isolated Android WebView (<code>emberandash.local</code>) with hardware acceleration.</p>
+            <div class="card-meta">Java 17 В· Android SDK 36 В· Three.js</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TAB 2: GENESIS -->
+      <section class="panel" id="panel-genesis">
+        <div class="section-head">
+          <h2>// PROJECT_GENESIS вЂ” KERNEL VERIFICATION</h2>
+          <span class="badge-ok">LAKE BUILD: PASS (0 SORRY / 0 AXIOMS)</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Module</th><th>Decls</th><th>Proved Focus</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>CollatzCoreReductions.lean</code></td>
+                <td class="ok">39</td>
+                <td>Exact trajectory law 2<sup>k</sup>F<sup>k</sup>(n) = 3<sup>w<sub>k</sub></sup>n + C<sub>k</sub>, high-seed descent, Mod-2<sup>30</sup> cylinder decay</td>
+              </tr>
+              <tr>
+                <td><code>CollatzTargetA_Asymptotic.lean</code></td>
+                <td class="ok">40</td>
+                <td>Dual-adic collapse (u = v = nв‚Ђ), supercritical prefix lower bounds, forward-inverse duality</td>
+              </tr>
+              <tr>
+                <td><code>CollatzTargetB_Stammering.lean</code></td>
+                <td class="ok">25</td>
+                <td>Stammering bit-exhaustion, Carry Sandwich C1 contraction, 2-adic Ridout ceiling (П„<sub>W</sub> в‰¤ 1)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bibtex-box">
+          <div class="bibtex-top">
+            <span>CITATION // BIBTEX</span>
+            <button id="copy-bib" type="button">COPY</button>
+          </div>
+          <pre id="bib-text">@software{sylenthai_2026_project_genesis,
+  author    = {sylenthai},
+  title     = {Project Genesis: Zero-Mathlib Kernel-Verified Lean 4 Obstructions for 3n + 1},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24422524},
+  url       = {https://doi.org/10.5281/zenodo.24422524}
+}</pre>
+        </div>
+      </section>
+
+      <!-- TAB 3: SYSTEMS -->
+      <section class="panel" id="panel-systems">
+        <div class="section-head">
+          <h2>// TECHNICAL_MATRIX</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th>Verification &amp; Audit</th><td>Lean 4 (v4.12.0) В· Lake В· 30-point adversarial Python auditor</td></tr>
+              <tr><th>Languages</th><td>Python 3.12 В· TypeScript В· Java 17 В· Kotlin В· JavaScript В· Bash</td></tr>
+              <tr><th>Backend &amp; Data</th><td>FastAPI В· AsyncIO В· PostgreSQL 16 (pgvector) В· SQLAlchemy 2.0 В· Alembic В· Redis 7 В· Celery</td></tr>
+              <tr><th>Frontend &amp; Mobile</th><td>React Native В· Expo В· CodeMirror 6 В· Three.js В· Android SDK 36</td></tr>
+              <tr><th>Infrastructure</th><td>Docker Compose В· Nginx В· GitHub Actions В· SSH Commit Signing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 4: CRYPTO -->
+      <section class="panel" id="panel-crypto">
+        <div class="section-head">
+          <h2>// CRYPTOGRAPHIC_IDENTITY &amp; ENDPOINTS</h2>
+        </div>
+        <pre class="key-block">HANDLE              : sylenthai
+EMAIL               : sylenthai@gmail.com
+GITHUB              : https://github.com/sylenthai
+BLUEPRINT           : https://sylenthai.github.io/sylenthai/project-genesis/
+ZENODO DOI          : https://doi.org/10.5281/zenodo.24422524
+SSH SIGNING (ED25519): SHA256:AwTwyq0i0pr3pBljb67zuWa+jA24IFD790xNN2ry97k</pre>
+      </section>
+    </main>
+
+    <footer class="statusbar">
+      <span>NORMAL В· sylenthai.github.io/sylenthai</span>
+      <span>utf-8 В· unix В· lean4/py3.12</span>
+    </footer>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".panel");
+    tabs.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById("panel-" + btn.dataset.tab).classList.add("active");
+      });
+    });
+
+    const commands = [
+      "lake build ProjectGenesis && python audit_30_points_adversarial.py",
+      "docker compose up -d && uvicorn app.main:app --workers 4",
+      "git log --show-signature -n 1"
+    ];
+    const target = document.getElementById("typed-cmd");
+    let cmdIdx = 0, charIdx = 0, deleting = false;
+    function tick() {
+      const full = commands[cmdIdx];
+      target.textContent = full.slice(0, charIdx);
+      if (!deleting && charIdx < full.length) {
+        charIdx++;
+        setTimeout(tick, 38);
+      } else if (!deleting && charIdx === full.length) {
+        deleting = true;
+        setTimeout(tick, 2100);
+      } else if (deleting && charIdx > 0) {
+        charIdx--;
+        setTimeout(tick, 18);
+      } else {
+        deleting = false;
+        cmdIdx = (cmdIdx + 1) % commands.length;
+        setTimeout(tick, 350);
+      }
+    }
+    tick();
+
+    const copyBtn = document.getElementById("copy-bib");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText(document.getElementById("bib-text").textContent);
+        copyBtn.textContent = "COPIED";
+        setTimeout(() => { copyBtn.textContent = "COPY"; }, 1600);
+      });
+    }
+  </script>
+</body>
+</html>

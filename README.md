@@ -121,5 +121,5 @@ Handle                    : sylenthai <sylenthai@gmail.com>
 ```
 
 <p align="center">
-  <sub><code>sylenthai@gmail.com</code> &nbsp;·&nbsp; <a href="https://doi.org/10.5281/zenodo.24422524">DOI: 10.5281/zenodo.24422524</a> &nbsp;·&nbsp; <a href="https://sylenthai.github.io/project-genesis/">Interactive Theorem Blueprint</a></sub>
+  <sub><code>sylenthai@gmail.com</code> &nbsp;·&nbsp; <a href="https://sylenthai.github.io/sylenthai/">Portfolio Terminal</a> &nbsp;·&nbsp; <a href="https://doi.org/10.5281/zenodo.24422524">DOI: 10.5281/zenodo.24422524</a> &nbsp;·&nbsp; <a href="https://sylenthai.github.io/project-genesis/">Interactive Theorem Blueprint</a></sub>
 </p>
