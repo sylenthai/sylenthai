@@ -30,7 +30,43 @@ structure Engineer where
   <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
 </div>
 
-### `// 03. ACTIVE_WORK & RESEARCH`
+### `// 03. KERNEL_VERIFICATION_MATRIX`
+
+<div align="center">
+  <img src="./assets/proof-matrix.svg" alt="Lean 4 Kernel Verification Matrix" width="100%" />
+</div>
+
+<details>
+<summary><code>[BibTeX]</code> Cite Project Genesis (Zenodo DOI: 10.5281/zenodo.24422524)</summary>
+
+```bibtex
+@software{sylenthai_2026_project_genesis,
+  author       = {sylenthai},
+  title        = {Project Genesis: Zero-Mathlib Kernel-Verified Lean 4 Obstructions and Structural Reductions for the 3n + 1 Problem},
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.24422524},
+  url          = {https://doi.org/10.5281/zenodo.24422524}
+}
+```
+
+</details>
+
+<div align="center">
+  <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
+</div>
+
+### `// 04. LIVE_TELEMETRY`
+
+<div align="center">
+  <img src="./assets/live-telemetry.svg" alt="Live GitHub Telemetry" width="100%" />
+</div>
+
+<div align="center">
+  <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
+</div>
+
+### `// 05. ACTIVE_WORK & RESEARCH`
 
 | Module | Domain | Core Engineering | Artifacts |
 | :--- | :--- | :--- | :--- |
@@ -42,7 +78,7 @@ structure Engineer where
   <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
 </div>
 
-### `// 04. TECHNICAL_MATRIX`
+### `// 06. TECHNICAL_MATRIX`
 
 | Layer | Stack |
 | :--- | :--- |
@@ -55,7 +91,7 @@ structure Engineer where
   <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
 </div>
 
-### `// 05. CONTRIBUTION_TOPOLOGY`
+### `// 07. CONTRIBUTION_TOPOLOGY`
 
 <p align="center">
   <picture>
@@ -73,7 +109,16 @@ structure Engineer where
   </picture>
 </p>
 
----
+<div align="center">
+  <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
+</div>
+
+### `// 08. CRYPTOGRAPHIC_IDENTITY`
+
+```text
+SSH Signing Key (ED25519) : SHA256:AwTwyq0i0pr3pBljb67zuWa+jA24IFD790xNN2ry97k
+Handle                    : sylenthai <sylenthai@gmail.com>
+```
 
 <p align="center">
   <sub><code>sylenthai@gmail.com</code> &nbsp;·&nbsp; <a href="https://doi.org/10.5281/zenodo.24422524">DOI: 10.5281/zenodo.24422524</a> &nbsp;·&nbsp; <a href="https://sylenthai.github.io/project-genesis/">Interactive Theorem Blueprint</a></sub>

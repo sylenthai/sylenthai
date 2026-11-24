@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="205" viewBox="0 0 880 205" fill="none">
+  <rect x="1" y="1" width="878" height="203" rx="10" fill="#0b0f14" stroke="#21262d" stroke-width="1.2" />
+
+  <text x="24" y="27" font-family="'Cascadia Code', Consolas, monospace" font-size="11" font-weight="600" letter-spacing="1.4" fill="#6e7681">LIVE TELEMETRY // AUTO-SYNCED VIA GITHUB ACTIONS</text>
+  <text x="856" y="27" text-anchor="end" font-family="'Cascadia Code', Consolas, monospace" font-size="10.5" fill="#6e7681">SYNC: 2026-11-24 17:22 UTC</text>
+  <line x1="20" y1="38" x2="860" y2="38" stroke="#161b22" stroke-width="1" />
+
+  <!-- Divider -->
+  <line x1="436" y1="38" x2="436" y2="204" stroke="#161b22" stroke-width="1" />
+
+  <!-- Left Pane: Languages & Counts -->
+  <text x="24" y="64" font-family="'Cascadia Code', Consolas, monospace" font-size="11.5" font-weight="700" fill="#e6edf3">LANGUAGE_SPECTRUM</text>
+  <clipPath id="barClip"><rect x="24" y="82" width="390" height="10" rx="5" /></clipPath>
+  <rect x="24" y="82" width="390" height="10" rx="5" fill="#161b22" />
+  <g clip-path="url(#barClip)">
+    <rect x="24" y="82" width="155.5" height="10" fill="#3fb950" /><rect x="179.5" y="82" width="145.7" height="10" fill="#58a6ff" /><rect x="325.2" y="82" width="82.5" height="10" fill="#79c0ff" /><rect x="407.7" y="82" width="3.1" height="10" fill="#8b949e" /><rect x="410.8" y="82" width="3.2" height="10" fill="#8b949e" />
+  </g>
+  <circle cx="29" cy="110" r="4" fill="#3fb950" /><text x="40" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Lean <tspan fill="#8b949e">39.6%</tspan></text><circle cx="234" cy="110" r="4" fill="#58a6ff" /><text x="245" y="114" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TypeScript <tspan fill="#8b949e">37.1%</tspan></text><circle cx="29" cy="134" r="4" fill="#79c0ff" /><text x="40" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">Python <tspan fill="#8b949e">21.0%</tspan></text><circle cx="234" cy="134" r="4" fill="#8b949e" /><text x="245" y="138" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">PLpgSQL <tspan fill="#8b949e">0.8%</tspan></text><circle cx="29" cy="158" r="4" fill="#8b949e" /><text x="40" y="162" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#c9d1d9">TeX <tspan fill="#8b949e">0.8%</tspan></text>
+
+  <line x1="24" y1="168" x2="414" y2="168" stroke="#161b22" stroke-width="1" />
+  <text x="24" y="188" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e">
+    REPOS: <tspan fill="#e6edf3" font-weight="700">5</tspan>   ·   STARS: <tspan fill="#3fb950" font-weight="700">10</tspan>   ·   FOLLOWERS: <tspan fill="#79c0ff" font-weight="700">0</tspan>
+  </text>
+
+  <!-- Right Pane: Event Stream -->
+  <text x="458" y="64" font-family="'Cascadia Code', Consolas, monospace" font-size="11.5" font-weight="700" fill="#e6edf3">RECENT_EVENT_STREAM</text>
+  <text x="458" y="96" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e"><tspan fill="#3fb950">&gt;</tspan> 2026-11-24 · watch  :: sylenthai/sylenthai</text><text x="458" y="120" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e"><tspan fill="#3fb950">&gt;</tspan> 2026-11-23 · push   :: sylenthai/dream-rsi</text><text x="458" y="144" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e"><tspan fill="#3fb950">&gt;</tspan> 2026-11-23 · watch  :: IsaiahN/-PHP--Baywatch-Websit</text><text x="458" y="168" font-family="'Cascadia Code', Consolas, monospace" font-size="11" fill="#8b949e"><tspan fill="#3fb950">&gt;</tspan> 2026-11-23 · watch  :: IsaiahN/Alta-Cabin-Rental--Bo</text>
+  <text x="458" y="188" font-family="'Cascadia Code', Consolas, monospace" font-size="10.5" fill="#6e7681">SOURCE: github-api · @sylenthai</text>
+</svg>

@@ -1,0 +1,45 @@
+name: Update Live Telemetry SVG
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/live-telemetry.svg"
+      - "profile-3d-contrib/**"
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Live Telemetry SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/update_telemetry.py
+
+      - name: Commit & Push Telemetry SVG
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/live-telemetry.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update live telemetry SVG"
+            git push
+          fi
