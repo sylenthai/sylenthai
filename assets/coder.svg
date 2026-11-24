@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="210" viewBox="0 0 240 210" fill="none">
+  <style>
+    @keyframes screenPulse {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.55)); }
+      50% { filter: drop-shadow(0 0 16px rgba(0, 255, 65, 0.7)); }
+    }
+    @keyframes floatCode1 {
+      0%, 100% { transform: translateY(0px); opacity: 0.9; }
+      50% { transform: translateY(-5px); opacity: 0.4; }
+    }
+    @keyframes floatCode2 {
+      0%, 100% { transform: translateY(-3px); opacity: 0.45; }
+      50% { transform: translateY(4px); opacity: 0.95; }
+    }
+    @keyframes eyeGlow {
+      0%, 100% { fill: #00d4ff; }
+      50% { fill: #00ff41; }
+    }
+    .laptop { animation: screenPulse 3s ease-in-out infinite; }
+    .code-l { animation: floatCode1 2.8s ease-in-out infinite; }
+    .code-r { animation: floatCode2 3.2s ease-in-out infinite; }
+    .visor { animation: eyeGlow 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Subtle floor glow -->
+  <ellipse cx="120" cy="192" rx="88" ry="8" fill="#00d4ff" fill-opacity="0.18" />
+
+  <!-- Floating code particles -->
+  <g class="code-l">
+    <rect x="20" y="42" width="28" height="4" rx="2" fill="#00ff41" fill-opacity="0.7" />
+    <rect x="14" y="52" width="38" height="4" rx="2" fill="#00d4ff" fill-opacity="0.6" />
+    <rect x="24" y="62" width="22" height="4" rx="2" fill="#00ff41" fill-opacity="0.5" />
+  </g>
+  <g class="code-r">
+    <rect x="188" y="38" width="32" height="4" rx="2" fill="#00d4ff" fill-opacity="0.7" />
+    <rect x="194" y="48" width="24" height="4" rx="2" fill="#00ff41" fill-opacity="0.6" />
+    <rect x="184" y="58" width="36" height="4" rx="2" fill="#7c3aed" fill-opacity="0.7" />
+  </g>
+
+  <!-- Hoodie & shoulders -->
+  <path d="M54 185 C54 134, 78 112, 120 112 C162 112, 186 134, 186 185 Z" fill="#0f172a" stroke="#00d4ff" stroke-width="3" />
+  <!-- Hood -->
+  <path d="M74 118 C72 64, 92 30, 120 30 C148 30, 168 64, 166 118 Z" fill="#1e293b" stroke="#00d4ff" stroke-width="3" />
+  <!-- Inner hood shadow / face -->
+  <path d="M88 106 C88 70, 102 52, 120 52 C138 52, 152 70, 152 106 C142 116, 98 116, 88 106 Z" fill="#020617" />
+
+  <!-- Glasses / visor -->
+  <rect class="visor" x="97" y="79" width="19" height="12" rx="3" fill-opacity="0.2" stroke="#00d4ff" stroke-width="2.2" />
+  <rect class="visor" x="124" y="79" width="19" height="12" rx="3" fill-opacity="0.2" stroke="#00d4ff" stroke-width="2.2" />
+  <line x1="116" y1="84" x2="124" y2="84" stroke="#00d4ff" stroke-width="2.2" />
+
+  <!-- Laptop -->
+  <g class="laptop">
+    <rect x="66" y="124" width="108" height="64" rx="8" fill="#e2e8f0" stroke="#00d4ff" stroke-width="2.5" />
+    <rect x="72" y="130" width="96" height="52" rx="4" fill="#0b1120" />
+    <!-- Glowing logo on back of laptop -->
+    <circle cx="120" cy="156" r="10" fill="none" stroke="#00ff41" stroke-width="2.4" />
+    <circle cx="120" cy="156" r="3.5" fill="#00d4ff" />
+    <!-- Base -->
+    <rect x="52" y="186" width="136" height="7" rx="3.5" fill="#94a3b8" stroke="#00d4ff" stroke-width="1.5" />
+  </g>
+</svg>
