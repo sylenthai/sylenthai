@@ -72,7 +72,7 @@ structure Engineer where
 | :--- | :--- | :--- | :--- |
 | **[Project Genesis](https://github.com/sylenthai/project-genesis)** | Formal Methods (`Lean 4`) | Zero-Mathlib kernel-verified 3n+1 cycle obstructions, dual-adic collapse, Stammering Bit-Exhaustion, Mod-2³⁰ cylinder contraction (`0 sorry`, `0 admit`, 30-pt adversarial audit) | [Blueprint](https://sylenthai.github.io/project-genesis/) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24422524) |
 | **SYLENTH Codes** | Multi-Agent AI Platform | Mobile-first autonomous dev orchestrator (`Orchestrator → Backend / Frontend / DB / QA / Security / DevOps`), live WebSocket telemetry, `CodeMirror 6`, RAG (`pgvector`) | `FastAPI` · `Celery` · `React Native` |
-| **EmberAndAshAndroid** | Native Systems / Mobile | Strategy & board engine built natively for Android (`SDK 36`, `Java 17`, `Kotlin` / Gradle KTS) | `Kotlin` · `Android` |
+| **EmberAndAshAndroid** | Native Systems / Mobile | Offline Three.js 3D chess client hosted inside a hardened Android WebView (`SDK 36`, `Java 17`, virtual origin isolation) | `Java 17` · `Three.js` · `Android` |
 
 <div align="center">
   <img src="./assets/pulse-divider.svg" alt="divider" width="100%" />
